@@ -1,18 +1,20 @@
 @import "_nullstyle";
 @import "_slick";
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 
-$pink: #E25E5E;
-$red: #D52A20;
-$brown: #312A2A;
+$pink: #e25e5e;
+$red: #d52a20;
+$brown: #312a2a;
 
 html,
 body {
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Mon Amour One', sans-serif;
-    font-family: 'Bebas Neue Cyrillic', sans-serif;
-    font-family: 'Gilroy', sans-serif;
+    font-family: "Nunito", sans-serif;
+    font-family: "Mon Amour One", sans-serif;
+    font-family: "Bebas Neue Cyrillic", sans-serif;
+    font-family: "Gilroy", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
 }
 .wrapper {
     min-height: 100%;
@@ -28,25 +30,45 @@ body {
 /*------------------------------------*/
 
 .header {
-
+    font-family: "Nunito";
+    margin-bottom: 80px;
     &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px 0;
     }
 
     &__logo {
-    }
-
-    &__logo-img {
-    }
-
-    &__nav {
+        margin-right: 100px;
     }
 
     &__list {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 58px;
     }
 
-    &__item {
+    &__link :nth-child(1) {
+        flex: none;
+        order: 0;
+        flex-grow: 0;
     }
-
-    &__link {
+    &__link :nth-child(2) {
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    &__link :nth-child(3) {
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+    }
+    &__link :nth-child(4) {
+        flex: none;
+        order: 3;
+        flex-grow: 0;
     }
 }
