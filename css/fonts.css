@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Manrope;
+    font-weight: 500;
+    font-style: normal;
+    src: local("Manrope"),
+         url("../fonts/Montserrat-Medium.woff2"),
+         url("../fonts/Montserrat-Medium.woff"),
+         url("../fonts/Montserrat-Medium.eot");
+    font-display: swap;
+}
+@font-face {
+    font-family: Manrope;
+    font-weight: 600;
+    font-style: normal;
+    src: local("Manrope"),
+         url("../fonts/Montserrat-Semi.woff2"),
+         url("../fonts/Montserrat-Semi.woff"),
+         url("../fonts/Montserrat-Semi.eot");
+    font-display: swap;
+}
+@font-face {
+    font-family: Manrope;
+    font-weight: 700;
+    font-style: normal;
+    src: local("Manrope"),
+         url("../fonts/Montserrat.woff2"),
+         url("../fonts/Montserrat.woff"),
+         url("../fonts/Montserrat.eot");
+    font-display: swap;
+}
+@font-face {
+    font-family: Manrope;
+    font-weight: 800;
+    font-style: normal;
+    src: local("Manrope"),
+         url("../fonts/Montserrat-Extra.woff2"),
+         url("../fonts/Montserrat-Extra.woff"),
+         url("../fonts/Montserrat-Extra.eot");
+    font-display: swap;
+}
+@font-face {
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: normal;
+    src: local("Roboto"),
+         url("../fonts/Roboto-Medium.woff2"),
+         url("../fonts/Roboto-Medium.woff"),
+         url("../fonts/Roboto-Medium.eot");
+    font-display: swap;
+}
