@@ -85,6 +85,7 @@ body {
 }
 .main {
     &__content {
+        background: url(../images/main/man.png) 575px 0px no-repeat;
         font-family: "Nunito";
         display: flex;
     }
@@ -140,6 +141,7 @@ body {
         border-radius: 15px;
         margin-right: 235px;
         margin-top: 50px;
+        margin-bottom: 80px;
         padding: 20px 0;
         background-color: $pink;
         position: relative;
@@ -162,15 +164,16 @@ body {
             position: absolute;
             width: 107px;
             height: 114px;
-            left: 60px;
-            bottom: -20px;
+            left: -80px;
+            bottom: -15px;
             background: url(../images/backround/tomat.png);
         }
     }
 
     &__img {
-        display: inline-block;
+        display:none;
         margin-right: 30px;
+        transform: translate 5px 5px;
     }
 
     &__bottom {
