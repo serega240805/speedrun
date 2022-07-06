@@ -246,12 +246,14 @@ body {
         height: 291px;
     }
 
-    &__img :nth-child(1){
-        margin-left: 40px;
+    &__img1 {
+        margin-left: 117px;
     }
-
-    &__img {
-        margin-left: 30px;
+    &__img2 {
+        margin-left: 42px;
+    }
+    &__img2:last-child{
+        margin-left: 48px;
     }
 
     &__item-title {
@@ -260,20 +262,56 @@ body {
         line-height: 32px;
         letter-spacing: -0.03em;
         text-transform: uppercase;
+        margin-left: 10px;
+        color: $pink;
+    }
+    
+    &__item-title2 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 32px;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        margin-left: 3px;
+        color: $pink;
+    }
+
+    &__item-title3 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 32px;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        margin-left: 12px;
         color: $pink;
     }
 
     &__item-text {
         font-family: "Nunito";
+        font-size: 20px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: -0.03em;
+    }
+
+
+    &__item-text2 {
+        font-family: "Nunito";
+        font-size: 20px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: -0.03em;
     }
 
     &__btn-box {
-        margin: 0px auto;
+        margin: 0 auto;
     }
 
     &__btn {
+        font-family: "Nunito";
     }
 
     &__link {
+        font-family: "Nunito";
     }
 }
