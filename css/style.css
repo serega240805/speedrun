@@ -198,23 +198,6 @@ h1, h2, h3, h4, h5, h6 {
   background: url(/images/ico/Line-Orange.svg);
 }
 
-#timer {
-  font-family: Arial, sans-serif;
-  font-size: 20px;
-  color: #999;
-  letter-spacing: -1px;
-}
-
-#timer span {
-  font-size: 60px;
-  color: #333;
-  margin: 0 3px 0 15px;
-}
-
-#timer span:first-child {
-  margin-left: 0;
-}
-
 html,
 body {
   font-family: "Nunito", sans-serif;
