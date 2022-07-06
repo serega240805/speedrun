@@ -26,6 +26,13 @@ body {
     padding: 0 15px;
     margin: 0 auto;
 }
+.pink-btn {
+    background: linear-gradient(89.1deg, #ed5252 21.17%, #e15d5d 64.27%);
+    box-shadow: 1px 2px 0px #a33b3b;
+    border-radius: 12px;
+    padding: 22px 35px;
+    color: #ffffff;
+}
 
 /*------------------------------------*/
 
@@ -51,6 +58,10 @@ body {
         gap: 58px;
     }
 
+    &__link {
+        color: #000;
+    }
+
     &__link :nth-child(1) {
         flex: none;
         order: 0;
@@ -71,4 +82,71 @@ body {
         order: 3;
         flex-grow: 0;
     }
+}
+.main {
+    &__content {
+        font-family: "Nunito";
+        display: flex;
+    }
+
+    &__text-box {
+    }
+
+    &__title {
+        font-family: "Mon Amour One";
+        font-weight: 550;
+        font-size: 83px;
+        line-height: 80px;
+        color: $brown;
+        margin-bottom: 40px;
+        span {
+            color: $red;
+        }
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 33px;
+        letter-spacing: -0.045em;
+        margin-bottom: 40px;
+        white-space: nowrap;
+    }
+
+    &__btn-box {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        font-weight: 700;
+        line-height: 25px;
+        padding: 20px 32px;
+        margin-left: 12px;
+        color: $pink;
+        border: 1px solid #e25e5e;
+        backdrop-filter: blur(179px);
+        border-radius: 12px;
+    }
+
+    &__timer{
+        margin-right: 250px;
+        margin-top: 50px;
+    }
+
+    &__img-box {
+    }
+
+    &__img {
+    }
+
+    &__bottom {
+    }
+
+    &__bottom-text1 {
+    }
+
+    &__bottom-text2 {
+    }
+}
+.container {
 }
