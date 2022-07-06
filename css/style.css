@@ -350,7 +350,23 @@ body {
           backdrop-filter: blur(179px);
   border-radius: 12px;
 }
+.main__timer-text {
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0px 0px 5px 15px;
+}
 .main__timer {
-  margin-right: 250px;
+  width: 400px;
+  border-radius: 15px;
+  margin-right: 235px;
   margin-top: 50px;
+  padding: 20px 0;
+  background-color: #e25e5e;
+}
+.main #timer-number-ff166aa496851e7afe758ecbe4baa011-hours {
+  font-family: "Bebas Neue Cyrillic";
 }
