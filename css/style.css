@@ -725,3 +725,11 @@ body {
 .best__content {
   background-color: #e25e5e;
 }
+.best__list-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
