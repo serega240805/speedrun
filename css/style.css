@@ -724,6 +724,26 @@ body {
 
 .best__content {
   background-color: #e25e5e;
+  color: #ffffff;
+  font-family: "Gilroy";
+  height: 1165px;
+}
+.best__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 68px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  padding-top: 80px;
+}
+.best__subtitle {
+  font-family: "Nunito";
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  margin-bottom: 35px;
 }
 .best__list-1 {
   display: -webkit-box;
@@ -732,4 +752,32 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+.best__list-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.best__item {
+  max-width: 270px;
+  height: 350px;
+}
+.best__img {
+  margin-bottom: 15px;
+}
+.best__text {
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: -0.03em;
+  line-height: 20px;
 }
