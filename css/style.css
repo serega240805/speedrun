@@ -757,6 +757,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 50px;
+  padding: 0px 20px;
 }
 .best__list-2 {
   display: -webkit-box;
@@ -769,6 +770,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 40px;
+  padding: 0px 20px;
 }
 .best__item {
   max-width: 270px;
