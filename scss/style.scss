@@ -542,6 +542,9 @@ body {
         align-items: center;
         justify-content: space-between;
         margin-bottom: 50px;
+        ul{
+            padding-inline-start: 0px;
+        }
     }
 
     &__list-2 {
