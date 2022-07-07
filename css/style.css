@@ -757,10 +757,6 @@ body {
           justify-content: space-between;
   margin-bottom: 50px;
 }
-.best__list-1 ul {
-  -webkit-padding-start: 0px;
-          padding-inline-start: 0px;
-}
 .best__list-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -778,6 +774,7 @@ body {
 }
 .best__img {
   margin-bottom: 15px;
+  border-radius: 11px;
 }
 .best__text {
   font-weight: 500;

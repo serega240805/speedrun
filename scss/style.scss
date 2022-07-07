@@ -542,9 +542,6 @@ body {
         align-items: center;
         justify-content: space-between;
         margin-bottom: 50px;
-        ul{
-            padding-inline-start: 0px;
-        }
     }
 
     &__list-2 {
@@ -560,6 +557,7 @@ body {
 
     &__img {
         margin-bottom: 15px;
+        border-radius: 11px;
     }
 
     &__text {
