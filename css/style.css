@@ -726,7 +726,7 @@ body {
   background-color: #e25e5e;
   color: #ffffff;
   font-family: "Gilroy";
-  height: 1165px;
+  height: auto;
   margin-bottom: 50px;
 }
 .best__title {
@@ -746,31 +746,18 @@ body {
   text-align: center;
   margin-bottom: 35px;
 }
-.best__list-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 50px;
-  padding: 0px 20px;
+.best__list-open {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 380px;
+  margin-left: 16px;
 }
-.best__list-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 40px;
-  padding: 0px 20px;
+.best__list-closed {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 380px;
+  margin-left: 16px;
+  display: none;
 }
 .best__item {
   max-width: 270px;
@@ -800,6 +787,7 @@ body {
   border-radius: 12px;
   padding: 18px 72px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .footer__content {
