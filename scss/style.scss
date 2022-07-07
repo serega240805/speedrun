@@ -500,3 +500,24 @@ body {
         text-align: center;
     }
 }
+.ketchyp {
+    &__title {
+        color: $pink;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 68px;
+        text-align: center;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        margin-bottom: 22px;
+    }
+
+    &__slider {
+    }
+
+    &__slide {
+    }
+
+    &__img {
+    }
+}

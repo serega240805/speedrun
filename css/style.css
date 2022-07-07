@@ -714,3 +714,14 @@ body {
   line-height: 30px;
   text-align: center;
 }
+
+.ketchyp__title {
+  color: #e25e5e;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 68px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
