@@ -380,8 +380,8 @@ body {
   background: url(../images/backround/green.png);
 }
 .main__img-box {
-  position: relative;
   margin-right: 30px;
+  position: relative;
 }
 .main__img-box::after {
   content: "";
@@ -442,6 +442,16 @@ body {
 
 .regulations__content {
   font-family: "Gilroy";
+  position: relative;
+}
+.regulations__content::after {
+  content: "";
+  position: absolute;
+  width: 135px;
+  height: 157px;
+  right: 10px;
+  bottom: 285px;
+  background: url(../images/backround/ketchup2.png);
 }
 .regulations__title {
   font-weight: 700;
@@ -460,9 +470,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-right: 115px;
 }
 .regulations__item {
   height: 291px;
@@ -518,11 +528,29 @@ body {
   letter-spacing: -0.03em;
 }
 .regulations__btn-box {
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 70px;
 }
 .regulations__btn {
   font-family: "Nunito";
+  margin-right: 30px;
+  pad: 18px 30px;
 }
 .regulations__link {
   font-family: "Nunito";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  border: 1px solid #e25e5e;
+  border-radius: 16px;
+  padding: 16px 48px;
+  color: #e25e5e;
 }

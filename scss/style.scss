@@ -157,8 +157,8 @@ body {
     }
 
     &__img-box {
-        position: relative;
         margin-right: 30px;
+        position: relative;
         &::after {
             content: "";
             position: absolute;
@@ -223,6 +223,16 @@ body {
 .regulations {
     &__content {
         font-family: "Gilroy";
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 135px;
+            height: 157px;
+            right: 10px;
+            bottom: 285px;
+            background: url(../images/backround/ketchup2.png);
+        }
     }
 
     &__title {
@@ -239,7 +249,8 @@ body {
     &__list {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
+        margin-right: 115px;
     }
 
     &__item {
@@ -252,7 +263,7 @@ body {
     &__img2 {
         margin-left: 42px;
     }
-    &__img2:last-child{
+    &__img2:last-child {
         margin-left: 48px;
     }
 
@@ -265,7 +276,7 @@ body {
         margin-left: 10px;
         color: $pink;
     }
-    
+
     &__item-title2 {
         font-weight: 700;
         font-size: 30px;
@@ -294,7 +305,6 @@ body {
         letter-spacing: -0.03em;
     }
 
-
     &__item-text2 {
         font-family: "Nunito";
         font-size: 20px;
@@ -304,14 +314,26 @@ body {
     }
 
     &__btn-box {
-        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 70px;
     }
 
     &__btn {
         font-family: "Nunito";
+        margin-right: 30px;
+        pad: 18px 30px;
     }
 
     &__link {
         font-family: "Nunito";
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        border: 1px solid #e25e5e;
+        border-radius: 16px;
+        padding: 16px 48px;
+        color: $pink;
     }
 }
