@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 * {
   padding: 0s;
@@ -560,12 +561,33 @@ body {
   height: 1080px;
   color: #ffffff;
   background-color: #e25e5e;
+  margin-bottom: 80px;
+  position: relative;
+}
+.prizes__content::after {
+  content: "";
+  position: absolute;
+  width: 124px;
+  height: 182px;
+  left: 50px;
+  top: -90px;
+  background: url(../images/backround/ketchup3.png);
+}
+.prizes__content::before {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 158px;
+  right: 50px;
+  bottom: -55px;
+  background: url(../images/backround/ketchup4.png);
 }
 .prizes__title {
   font-weight: 700;
   font-size: 64px;
   line-height: 68px;
   margin-bottom: 25px;
+  padding-top: 80px;
   text-align: center;
 }
 .prizes__subtitle {
@@ -585,6 +607,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin-bottom: 40px;
 }
 .prizes__item1 {
   background: #ffffff;
@@ -592,6 +615,16 @@ body {
           box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.17);
   border-radius: 15px;
   height: 300px;
+  position: relative;
+}
+.prizes__item1::after {
+  content: "";
+  position: absolute;
+  width: 192px;
+  height: 210px;
+  right: 40px;
+  bottom: 225px;
+  background: url(../images/призы/Кулинар_1\ место\ .png);
 }
 .prizes__item2 {
   background: #ffffff;
@@ -599,6 +632,16 @@ body {
           box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.17);
   border-radius: 15px;
   height: 340px;
+  position: relative;
+}
+.prizes__item2::after {
+  content: "";
+  position: absolute;
+  width: 138px;
+  height: 258px;
+  right: 160px;
+  bottom: 245px;
+  background: url(../images/призы/Кулинар_2\ место.png);
 }
 .prizes__item3 {
   background: #ffffff;
@@ -606,21 +649,68 @@ body {
           box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.17);
   border-radius: 15px;
   height: 250px;
+  position: relative;
 }
-.prizes__text {
-  color: #e25e5e;
-  letter-spacing: -0.03em;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 32px;
-  padding: 25px 80px;
+.prizes__item3::after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 174px;
+  right: 10px;
+  bottom: 225px;
+  background: url(../images/призы/Кулинар_3\ место\ 1.png);
 }
-.prizes__text:nth-child(2) {
+.prizes__img1 {
+  margin: 100px 0px 0px 100px;
+}
+.prizes__img2 {
+  margin: 140px 0px 0px 180px;
+}
+.prizes__img3 {
+  margin: 50px 0px 0px 100px;
+}
+.prizes__text1 {
   color: #e25e5e;
   letter-spacing: -0.03em;
   font-weight: 700;
   font-size: 30px;
   line-height: 32px;
   padding: 25px 40px;
+  text-align: center;
+}
+.prizes__text2 {
+  color: #e25e5e;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 32px;
+  padding: 25px 80px;
+  text-align: center;
+}
+.prizes__text3 {
+  color: #e25e5e;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 32px;
+  padding: 25px 40px;
+  text-align: center;
+}
+.prizes__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 22px;
+}
+.prizes__bottom {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 30px;
   text-align: center;
 }
