@@ -3,9 +3,6 @@
 .slick-slider {
     position: relative;
 }
-.slick-slide {
-    width: 616px;
-}
 .slick-list {
     position: relative;
     overflow: hidden;
@@ -45,6 +42,7 @@
     float: left;
     height: 100%;
     min-height: 1px;
+    margin-right: 50px;
     img {
         display: block;
     }
@@ -92,18 +90,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
 .slick-dots li {
-    margin: 0px 10px;
+    margin: 0px 30px;
 }
 .slick-dots button {
     width: 32px;
     height: 32px;
-    background-color: $pink;
+    border-radius: 50%;
     font-size: 0;
+    background-color: #E25E5E;
 }
 .slick-active button {
     width: 32px;
     height: 32px;
     font-size: 0;
+    border: 1px solid #E25E5E;
+    background-color: #fff;
 }
