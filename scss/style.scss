@@ -516,6 +516,7 @@ body {
         color: #ffffff;
         font-family: "Gilroy";
         height: 1165px;
+        margin-bottom: 50px;
     }
 
     &__title {
@@ -548,6 +549,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 40px;
     }
 
     &__item {
@@ -566,7 +568,20 @@ body {
         letter-spacing: -0.03em;
         line-height: 20px;
     }
+    &__link1{
+        text-align: center;
+    }
 
     &__link {
+        display: inline-block;
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: $pink;
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 18px 72px;
+        margin: 0 auto;
     }
 }
