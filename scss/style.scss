@@ -43,6 +43,13 @@ body {
 .header {
     font-family: "Nunito";
     margin-bottom: 80px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    background-color: #fff;
+    
     &__content {
         display: flex;
         align-items: center;
@@ -65,29 +72,9 @@ body {
     &__link {
         color: #000;
     }
-
-    &__link :nth-child(1) {
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-    }
-    &__link :nth-child(2) {
-        flex: none;
-        order: 1;
-        flex-grow: 0;
-    }
-    &__link :nth-child(3) {
-        flex: none;
-        order: 2;
-        flex-grow: 0;
-    }
-    &__link :nth-child(4) {
-        flex: none;
-        order: 3;
-        flex-grow: 0;
-    }
 }
 .main {
+    padding-top: 106px;
     &__content {
         background: url(../images/main/man.png) 575px 0px no-repeat;
         font-family: "Nunito";
