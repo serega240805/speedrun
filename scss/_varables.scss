@@ -1,0 +1,9 @@
+$pink: #e25e5e;
+$red: #d52a20;
+$brown: #312a2a;
+
+@mixin breakpoint($point) {
+    @if $point == lg {
+        @media (max-width: 992px) {@content;}
+    }
+}
