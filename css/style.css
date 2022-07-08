@@ -242,7 +242,8 @@ h1, h2, h3, h4, h5, h6 {
           box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.4);
   visibility: hidden;
   max-height: 1080px;
-  overflow: hidden;
+  overflow: scroll;
+  overflow-x: hidden;
   opacity: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -252,6 +253,20 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   max-width: 1025px;
+}
+.pop-up::-webkit-scrollbar {
+  width: 8px;
+}
+.pop-up::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #eee;
+}
+.pop-up::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #888;
+}
+.pop-up::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(100, 100, 100, 0.4);
 }
 @media (min-width: 768px) {
   .pop-up {
@@ -339,6 +354,10 @@ body {
   font-family: "Gilroy", sans-serif;
   font-size: 18px;
   font-weight: 400;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0;
 }
 
 .wrapper {
@@ -868,6 +887,16 @@ body {
   font-family: "Gilroy";
   height: auto;
   margin-bottom: 50px;
+  position: relative;
+}
+.best__content::after {
+  content: "";
+  position: absolute;
+  width: 125px;
+  height: 144px;
+  left: 100px;
+  top: -90px;
+  background: url(../images/backround/ketchup5.png);
 }
 .best__title {
   font-weight: 700;
