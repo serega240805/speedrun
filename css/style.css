@@ -401,3 +401,129 @@ body {
   height: 32px;
   background: url(/images/main/1.svg);
 }
+
+.accordeon__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.accordeon__subtitle {
+  margin-left: 35px;
+}
+.accordeon__title {
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 140%;
+  text-transform: capitalize;
+  margin-bottom: 42px;
+  margin-left: 35px;
+}
+.accordeon__title span {
+  font-weight: 600;
+}
+.accordeon__btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 40px;
+  margin-top: 45px;
+}
+.accordeon__btn {
+  color: #ffffff;
+  background: #1d92ff;
+  border-radius: 4px;
+  margin-right: 25px;
+  padding: 15px 40px;
+}
+.accordeon__link {
+  color: #1d92ff;
+  line-height: 120%;
+  border: 1px solid rgba(29, 146, 255, 0.1);
+  border-radius: 4px;
+  padding: 15px 40px;
+  gap: 10px;
+}
+.accordeon__item {
+  background: #ffffff;
+  border: 1px solid rgba(1, 7, 13, 0.1);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.accordeon__button {
+  position: relative;
+  background: #ffffff;
+  color: #01070d;
+  padding: 15px 22px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.accordeon__button:after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  bottom: 17px;
+  width: 15px;
+  height: 8px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  background: url(/images/accordeon/Vector.svg) no-repeat;
+}
+
+.accordeon__item:nth-child(2n) .accordeon__button {
+  background: #ffffff;
+  color: #01070d;
+}
+
+.accordeon__item:nth-child(2n) .accordeon__button.active {
+  background: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1d92ff;
+}
+
+.accordeon__panel {
+  color: #01070d;
+  border-radius: 22px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.5s ease;
+  transition: max-height 0.5s ease;
+}
+
+.panel__text {
+  list-style-type: none;
+  padding: 10px 0px;
+  color: #4f4f4f;
+}
+.panel__text a {
+  color: rgba(29, 146, 255, 0.65);
+  text-decoration: underline;
+}
+
+.active {
+  background: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1d92ff;
+}
+.active:after {
+  right: 18px;
+  bottom: 17px;
+  width: 15px;
+  height: 8px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background: url(/images/accordeon/Vector.svg) no-repeat;
+}
