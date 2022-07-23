@@ -77,7 +77,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  color: #ffffff;
 }
 
 .wrapper {
@@ -101,10 +100,18 @@ body {
   border-radius: 5px;
 }
 
+.subtitle {
+  line-height: 160%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1d92ff;
+}
+
 /*------------------------------------*/
 .header {
   font-family: "Poppins";
   background: #002547;
+  color: #ffffff;
 }
 .header__content {
   display: -webkit-box;
@@ -192,6 +199,7 @@ body {
 }
 
 .main {
+  color: #ffffff;
   height: 850px;
   background: #002547;
 }
@@ -313,4 +321,83 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 100px 15px;
+}
+.body__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.body__subtitle {
+  line-height: 160%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1d92ff;
+}
+.body__title {
+  font-weight: 500;
+  font-size: 39px;
+  line-height: 135%;
+  text-transform: capitalize;
+  max-width: 425px;
+  margin-bottom: 25px;
+}
+.body__title span {
+  font-weight: 700;
+}
+.body__subtext {
+  text-transform: capitalize;
+  line-height: 160%;
+  color: rgba(1, 7, 13, 0.7);
+  margin-bottom: 45px;
+  max-width: 530px;
+  margin-left: 6px;
+}
+.body__subtext a {
+  font-weight: 600;
+  color: grey;
+}
+.body__text-box {
+  max-width: 400px;
+}
+.body__text {
+  margin-left: 40px;
+  color: rgba(78, 80, 82, 0.7058823529);
+  line-height: 160%;
+  position: relative;
+}
+.body__text:not(:last-child) {
+  margin-bottom: 25px;
+}
+.body__text:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  left: -45px;
+  top: 20px;
+  width: 32px;
+  height: 32px;
+  background: url(/images/main/1.svg);
+}
+.body__text:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  left: -45px;
+  top: 20px;
+  width: 32px;
+  height: 32px;
+  background: url(/images/main/2.svg);
+}
+.body__text:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  left: -45px;
+  top: 10px;
+  width: 32px;
+  height: 32px;
+  background: url(/images/main/1.svg);
 }
