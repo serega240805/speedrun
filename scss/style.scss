@@ -70,6 +70,9 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include breakpoint(lg) {
+            display: none;
+        }
     }
 
     &__item {
@@ -112,16 +115,124 @@ body {
         color: #1d92ff;
         padding: 15px 30px;
         border-radius: 5px;
+        @include breakpoint(lg) {
+            margin-right: 65px;
+        }
+        @include breakpoint(sm) {
+            padding: 10px 15px;
+        }
+        @include breakpoint(xs) {
+            padding: 5px 10px;
+        }
+    }
+    .nav-bar {
+        position: absolute;
+        background-color: #002547;
+        top: 0;
+        right: 100%;
+        height: 100vh;
+        width: 250px;
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: position 2.9s;
+    }
+
+    .toggle {
+        left: 0;
+        box-shadow: 1px 0 15px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .toggle-menu {
+        background-color: rgba(0, 0, 0, 0.2);
+        position: fixed;
+        top: 30px;
+        right: 20px;
+        width: 40px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 2px 2px 2px 3px;
+        border-radius: 5px;
+        cursor: pointer;
+        @include breakpoint(minlg) {
+            display: none;
+        }
+        @include breakpoint(xs) {
+            top: 22px;
+        }
+    }
+
+    .line {
+        width: 100%;
+        height: 3px;
+        border-radius: 5px;
+        background-color: #fff;
+        transition: transform 0.2s ease-out;
+    }
+
+    .toggle .line1 {
+        background-color: #000000;
+        transform: scale(0.9) rotateZ(-45deg) translate(-6px, 4px);
+    }
+
+    .toggle .line2 {
+        display: none;
+    }
+
+    .toggle .line3 {
+        background-color: #000000;
+        transform: scale(0.9) rotateZ(45deg) translate(-6px, -4px);
+    }
+
+    .toggle .toggle-menu {
+        background-color: white;
+    }
+
+    .nav-list-item {
+        text-align: center;
+        padding: 25px 0;
+    }
+
+    .nav-link {
+        color: #fff;
+        font-size: 22px;
+        text-decoration: none;
+        position: relative;
+        padding-bottom: 4px;
+    }
+
+    .nav-link::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        transform: scaleX(0);
+        transition: transform 0.4s ease-in-out;
+        transform-origin: left;
+    }
+
+    .nav-link:hover::before {
+        transform: scaleX(1);
     }
 }
 .main {
     color: #ffffff;
-    height: 850px;
+    min-height: 850px;
     background: #002547;
     &__content {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include breakpoint(xl) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &__left {
@@ -132,6 +243,10 @@ body {
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: #1d92ff;
+        @include breakpoint(xl) {
+            margin-top: 30px;
+            text-align: center;
+        }
     }
 
     &__title {
@@ -143,6 +258,10 @@ body {
         margin-bottom: 25px;
         span {
             color: rgba(29, 146, 255, 1);
+        }
+        @include breakpoint(xl) {
+            margin-top: 30px;
+            text-align: center;
         }
     }
 
@@ -180,12 +299,20 @@ body {
             color: white;
             font-weight: 500;
         }
+        @include breakpoint(xl) {
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 40px;
+        }
     }
 
     &__btn-box {
         display: flex;
         align-items: center;
         margin-bottom: 40px;
+        @include breakpoint(xl) {
+            justify-content: center;
+        }
     }
 
     &__btn {
@@ -219,6 +346,9 @@ body {
             position: absolute;
             background: url(/images/header/Arrow-1.png) no-repeat;
         }
+        @include breakpoint(xl) {
+            text-align: center;
+        }
     }
 
     &__link-master {
@@ -230,6 +360,9 @@ body {
     }
 
     &__right-img {
+        @include breakpoint(xl) {
+            max-width: 100%;
+        }
     }
 }
 .companies {
@@ -797,7 +930,6 @@ body {
         height: 206px;
         min-width: 1250px;
         background: url(/images/footer/background.png) no-repeat;
-        
     }
 
     &__text-box {
