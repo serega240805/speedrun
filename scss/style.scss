@@ -788,3 +788,58 @@ body {
         transform: translateX(110px);
     }
 }
+.email {
+    display: grid;
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 206px;
+        min-width: 1250px;
+        background: url(/images/footer/background.png) no-repeat;
+        
+    }
+
+    &__text-box {
+        max-width: 480px;
+        margin-left: 52px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: 25px;
+        color: #fff;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    &__box {
+        margin-right: 52px;
+        position: relative;
+    }
+
+    &__input {
+        background: none;
+        opacity: 0.8;
+        backdrop-filter: blur(274px);
+        border-radius: 34px;
+        color: rgba(255, 255, 255, 0.7);
+        border: 1px solid #747474;
+        padding: 24px 140px 24px 40px;
+    }
+
+    &__btn {
+        position: absolute;
+        left: 255px;
+        top: 15px;
+        min-width: 76px;
+        height: 42px;
+        border-radius: 34px;
+    }
+}
