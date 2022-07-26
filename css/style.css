@@ -219,7 +219,7 @@ body {
   }
 }
 .header .nav-bar {
-  position: absolute;
+  position: fixed;
   background-color: #002547;
   top: 0;
   right: 100%;
@@ -237,6 +237,7 @@ body {
           align-items: center;
   -webkit-transition: position 2.9s;
   transition: position 2.9s;
+  padding-right: 40px;
 }
 .header .toggle {
   left: 0;
@@ -271,6 +272,11 @@ body {
 @media (max-width: 320px) {
   .header .toggle-menu {
     top: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .header .toggle-menu {
+    top: 26px;
   }
 }
 .header .line {
@@ -386,6 +392,17 @@ body {
     text-align: center;
   }
 }
+@media (max-width: 768px) {
+  .main__title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+@media (max-width: 576px) {
+  .main__title {
+    min-width: 250px;
+  }
+}
 .main__title-inderline {
   position: relative;
 }
@@ -406,6 +423,34 @@ body {
   right: 0;
   background-color: white;
   position: absolute;
+}
+@media (max-width: 768px) {
+  .main__title-inderline::after {
+    width: 49px;
+    height: 3px;
+    bottom: 6px;
+    right: 0px;
+  }
+  .main__title-inderline::before {
+    width: 49px;
+    height: 3px;
+    bottom: 6px;
+    right: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .main__title-inderline::after {
+    width: 49px;
+    height: 3px;
+    bottom: 6px;
+    right: 175px;
+  }
+  .main__title-inderline::before {
+    width: 49px;
+    height: 3px;
+    bottom: 6px;
+    left: -185px;
+  }
 }
 .main__subtext {
   font-weight: 400;
@@ -443,9 +488,23 @@ body {
             justify-content: center;
   }
 }
+@media (max-width: 576px) {
+  .main__btn-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .main__btn {
   margin-right: 30px;
   padding: 15px 40px;
+}
+@media (max-width: 576px) {
+  .main__btn {
+    margin-bottom: 15px;
+    margin-right: 0px;
+  }
 }
 .main__link {
   -webkit-box-align: center;
@@ -480,6 +539,11 @@ body {
     text-align: center;
   }
 }
+@media (max-width: 320px) {
+  .main__text::before {
+    top: 60px;
+  }
+}
 .main__link-master {
   color: white;
   font-weight: 500;
@@ -502,6 +566,48 @@ body {
           justify-content: space-between;
   padding: 100px 15px;
 }
+@media (max-width: 992px) {
+  .companies__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 80px;
+  }
+}
+@media (max-width: 576px) {
+  .companies__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 992px) {
+  .companies__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333%;
+            flex: 0 0 33.333%;
+    margin-bottom: 60px;
+    max-width: 180px;
+  }
+}
+@media (max-width: 768px) {
+  .companies__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    margin-bottom: 60px;
+    margin-right: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .companies__item {
+    margin-right: 0px;
+  }
+}
 .body__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -513,11 +619,29 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 1300px) {
+  .body__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+@media (max-width: 768px) {
+  .body__left-img {
+    max-width: 100%;
+  }
+}
 .body__subtitle {
   line-height: 160%;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #1d92ff;
+}
+@media (max-width: 1300px) {
+  .body__subtitle {
+    text-align: center;
+  }
 }
 .body__title {
   font-weight: 500;
@@ -529,6 +653,12 @@ body {
 }
 .body__title span {
   font-weight: 700;
+}
+@media (max-width: 1300px) {
+  .body__title {
+    text-align: center;
+    max-width: none;
+  }
 }
 .body__subtext {
   text-transform: capitalize;
@@ -542,8 +672,20 @@ body {
   font-weight: 600;
   color: grey;
 }
+@media (max-width: 1300px) {
+  .body__subtext {
+    text-align: center;
+    max-width: none;
+  }
+}
 .body__text-box {
   max-width: 400px;
+}
+@media (max-width: 1300px) {
+  .body__text-box {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 }
 .body__text {
   margin-left: 40px;

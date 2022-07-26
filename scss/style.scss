@@ -126,7 +126,7 @@ body {
         }
     }
     .nav-bar {
-        position: absolute;
+        position: fixed;
         background-color: #002547;
         top: 0;
         right: 100%;
@@ -137,6 +137,7 @@ body {
         justify-content: center;
         align-items: center;
         transition: position 2.9s;
+        padding-right: 40px;
     }
 
     .toggle {
@@ -162,6 +163,9 @@ body {
         }
         @include breakpoint(xs) {
             top: 22px;
+        }
+        @include breakpoint(md) {
+            top: 26px;
         }
     }
 
@@ -263,6 +267,13 @@ body {
             margin-top: 30px;
             text-align: center;
         }
+        @include breakpoint(md) {
+            font-size: 40px;
+            line-height: 44px;
+        }
+        @include breakpoint(sm) {
+            min-width: 250px;
+        }
     }
 
     &__title-inderline {
@@ -284,6 +295,34 @@ body {
             right: 0;
             background-color: white;
             position: absolute;
+        }
+        @include breakpoint(md) {
+            &::after {
+                width: 49px;
+                height: 3px;
+                bottom: 6px;
+                right: 0px;
+            }
+            &::before {
+                width: 49px;
+                height: 3px;
+                bottom: 6px;
+                right: 0px;
+            }
+        }
+        @include breakpoint(md) {
+            &::after {
+                width: 49px;
+                height: 3px;
+                bottom: 6px;
+                right: 175px;
+            }
+            &::before {
+                width: 49px;
+                height: 3px;
+                bottom: 6px;
+                left: -185px;
+            }
         }
     }
 
@@ -313,11 +352,18 @@ body {
         @include breakpoint(xl) {
             justify-content: center;
         }
+        @include breakpoint(sm) {
+            flex-direction: column;
+        }
     }
 
     &__btn {
         margin-right: 30px;
         padding: 15px 40px;
+        @include breakpoint(sm) {
+            margin-bottom: 15px;
+            margin-right: 0px;
+        }
     }
 
     &__link {
@@ -349,6 +395,11 @@ body {
         @include breakpoint(xl) {
             text-align: center;
         }
+        @include breakpoint(xs) {
+            &::before{
+                top: 60px;
+            }
+        }
     }
 
     &__link-master {
@@ -371,9 +422,31 @@ body {
         align-items: center;
         justify-content: space-between;
         padding: 100px 15px;
+        @include breakpoint(lg) {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: 80px;
+        }
+        @include breakpoint(sm) {
+            flex-direction: column;
+            margin-left: 0px;
+        }
     }
 
     &__item {
+        @include breakpoint(lg) {
+            flex: 0 0 33.333%;
+            margin-bottom: 60px;
+            max-width: 180px;
+        }
+        @include breakpoint(md) {
+            flex: 0 0 50%;
+            margin-bottom: 60px;
+            margin-right: 30px;
+        }
+        @include breakpoint(sm) {
+            margin-right: 0px;
+        }
     }
 
     &__img {
@@ -384,12 +457,18 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include breakpoint(xl) {
+            flex-direction: column-reverse;
+        }
     }
 
     &__left {
     }
 
     &__left-img {
+        @include breakpoint(md) {
+            max-width: 100%;
+        }
     }
 
     &__right {
@@ -400,6 +479,9 @@ body {
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: #1d92ff;
+        @include breakpoint(xl) {
+            text-align: center;
+        }
     }
 
     &__title {
@@ -411,6 +493,10 @@ body {
         margin-bottom: 25px;
         span {
             font-weight: 700;
+        }
+        @include breakpoint(xl) {
+            text-align: center;
+            max-width: none;
         }
     }
 
@@ -425,10 +511,18 @@ body {
             font-weight: 600;
             color: grey;
         }
+        @include breakpoint(xl) {
+            text-align: center;
+            max-width: none;
+        }
     }
 
     &__text-box {
         max-width: 400px;
+        @include breakpoint(xl) {
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
     }
 
     &__text {
