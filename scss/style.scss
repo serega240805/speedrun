@@ -396,7 +396,7 @@ body {
             text-align: center;
         }
         @include breakpoint(xs) {
-            &::before{
+            &::before {
                 top: 60px;
             }
         }
@@ -573,6 +573,9 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include breakpoint(xl) {
+            flex-direction: column;
+        }
     }
 
     &__left {
@@ -580,6 +583,9 @@ body {
 
     &__subtitle {
         margin-left: 35px;
+        @include breakpoint(xl) {
+            text-align: center;
+        }
     }
 
     &__title {
@@ -592,6 +598,9 @@ body {
         span {
             font-weight: 600;
         }
+        @include breakpoint(xl) {
+            text-align: center;
+        }
     }
 
     &__btn-box {
@@ -599,6 +608,11 @@ body {
         align-items: center;
         margin-left: 40px;
         margin-top: 45px;
+        justify-content: center;
+        @include breakpoint(sm) {
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
     }
 
     &__btn {
@@ -607,6 +621,9 @@ body {
         border-radius: 4px;
         margin-right: 25px;
         padding: 15px 40px;
+        @include breakpoint(sm) {
+            margin-bottom: 30px;
+        }
     }
 
     &__link {
@@ -622,6 +639,9 @@ body {
     }
 
     &__right-img {
+        @include breakpoint(lg) {
+            max-width: 100%;
+        }
     }
 
     .accordeon__item {
@@ -629,6 +649,11 @@ body {
         border: 1px solid rgba(1, 7, 13, 0.1);
         border-radius: 5px;
         margin-bottom: 15px;
+        max-width: 500px;
+        margin: 0 auto;
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
     }
 
     .accordeon__button {
@@ -676,6 +701,7 @@ body {
         list-style-type: none;
         padding: 10px 0px;
         color: #4f4f4f;
+        line-height: 160%;
         a {
             color: rgba(29, 146, 255, 0.65);
             text-decoration: underline;
@@ -701,10 +727,14 @@ body {
 }
 .grid {
     margin-bottom: 200px;
+    @include breakpoint(md) {
+        margin-bottom: 100px;
+    }
     &__subtitle {
         text-align: center;
         letter-spacing: 0.05em;
         text-transform: uppercase;
+        margin-bottom: 20px;
     }
 
     &__title {
@@ -712,6 +742,7 @@ body {
         font-size: 39px;
         line-height: 135%;
         text-align: center;
+        margin-bottom: 20px;
     }
 
     &__subtext {
@@ -723,13 +754,19 @@ body {
 
     &__box {
         max-width: 1146px;
-        height: 480px;
+        min-height: 480px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: 250px;
         margin: 0 auto;
         padding-top: 20px;
         border: 1px dashed #1d92ff;
+        @include breakpoint(md) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include breakpoint(sm) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 
     &__item {
@@ -766,12 +803,14 @@ body {
         text-align: center;
         text-transform: capitalize;
         color: #01070d;
+        margin-bottom: 20px;
     }
 
     &__subtitle {
         line-height: 160%;
         text-align: center;
         color: rgba(1, 7, 13, 0.7);
+        margin-bottom: 25px;
     }
 
     &__content {
@@ -1067,5 +1106,75 @@ body {
         min-width: 76px;
         height: 42px;
         border-radius: 34px;
+    }
+}
+.footer {
+
+    &__content {
+        display: flex;
+        justify-content: space-around;
+        background: rgba(0, 0, 0, 0.90);;
+        padding: 125px 0px;
+    }
+
+    &__list-logo {
+    }
+
+    &__item {
+        color: rgba(255, 255, 255, 0.7);
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        max-width: 222px;
+        line-height: 160%;
+    }
+
+    &__item-title{
+        margin-bottom: 30px;
+        color: #fff;
+    }
+
+    &__logo {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        margin-bottom: 30px;
+        margin-left: 55px;
+        color: #ffffff;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 42px;
+            height: 42px;
+            left: -50px;
+            top: -5px;
+            background: url(/images/header/logo.svg) no-repeat;
+        }
+    }
+
+    &__list {
+    }
+
+    &__link {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    &__input {
+        background: none;
+        opacity: 0.8;
+        backdrop-filter: blur(274px);
+        border-radius: 34px;
+        color: rgba(255, 255, 255, 0.7);
+        border: 1px solid #747474;
+        padding: 9px 20px 9px 15px;
+    }
+
+    &__list-2 {
+        padding-left: 0px;
+    }
+
+    &__list-link {
+        margin-right: 10px;
     }
 }
