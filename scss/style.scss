@@ -1173,9 +1173,20 @@ body {
         justify-content: space-around;
         background: rgba(0, 0, 0, 0.90);;
         padding: 125px 0px;
+        @include breakpoint(lg) {
+            flex-wrap: wrap;
+            align-items: center;
+        }
     }
 
     &__list-logo {
+        @include breakpoint(lg) {
+            flex: 0 0 33.333%;
+            margin-bottom: 100px;
+        }
+        @include breakpoint(sm) {
+            flex: 0 0 50%;
+        }
     }
 
     &__item {
@@ -1185,11 +1196,13 @@ body {
         }
         max-width: 222px;
         line-height: 160%;
+        
     }
 
     &__item-title{
         margin-bottom: 30px;
         color: #fff;
+        line-height: 160%;
     }
 
     &__logo {
@@ -1212,6 +1225,10 @@ body {
     }
 
     &__list {
+        @include breakpoint(lg) {
+            flex: 0 0 33.333%;
+            margin-bottom: 80px;
+        }
     }
 
     &__link {
