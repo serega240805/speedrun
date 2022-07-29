@@ -233,7 +233,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        @include breakpoint(xl) {
+        @include breakpoint(xxl) {
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -247,7 +247,7 @@ body {
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: #1d92ff;
-        @include breakpoint(xl) {
+        @include breakpoint(xxl) {
             margin-top: 30px;
             text-align: center;
         }
@@ -263,7 +263,7 @@ body {
         span {
             color: rgba(29, 146, 255, 1);
         }
-        @include breakpoint(xl) {
+        @include breakpoint(xxl) {
             margin-top: 30px;
             text-align: center;
         }
@@ -338,7 +338,7 @@ body {
             color: white;
             font-weight: 500;
         }
-        @include breakpoint(xl) {
+        @include breakpoint(xxl) {
             margin: 0 auto;
             text-align: center;
             margin-bottom: 40px;
@@ -349,7 +349,7 @@ body {
         display: flex;
         align-items: center;
         margin-bottom: 40px;
-        @include breakpoint(xl) {
+        @include breakpoint(xxl) {
             justify-content: center;
         }
         @include breakpoint(sm) {
@@ -392,7 +392,7 @@ body {
             position: absolute;
             background: url(/images/header/Arrow-1.png) no-repeat;
         }
-        @include breakpoint(xl) {
+        @include breakpoint(xxl) {
             text-align: center;
         }
         @include breakpoint(xs) {
@@ -411,7 +411,7 @@ body {
     }
 
     &__right-img {
-        @include breakpoint(xl) {
+        @include breakpoint(xxl) {
             max-width: 100%;
         }
     }
@@ -457,7 +457,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        @include breakpoint(xl) {
+        @include breakpoint(xxl) {
             flex-direction: column-reverse;
         }
     }
@@ -479,7 +479,7 @@ body {
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: #1d92ff;
-        @include breakpoint(xl) {
+        @include breakpoint(xxl) {
             text-align: center;
         }
     }
@@ -494,7 +494,7 @@ body {
         span {
             font-weight: 700;
         }
-        @include breakpoint(xl) {
+        @include breakpoint(xxl) {
             text-align: center;
             max-width: none;
         }
@@ -511,7 +511,7 @@ body {
             font-weight: 600;
             color: grey;
         }
-        @include breakpoint(xl) {
+        @include breakpoint(xxl) {
             text-align: center;
             max-width: none;
         }
@@ -519,7 +519,7 @@ body {
 
     &__text-box {
         max-width: 400px;
-        @include breakpoint(xl) {
+        @include breakpoint(xxl) {
             margin: 0 auto;
             margin-bottom: 30px;
         }
@@ -573,7 +573,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        @include breakpoint(xl) {
+        @include breakpoint(xxl) {
             flex-direction: column;
         }
     }
@@ -583,7 +583,7 @@ body {
 
     &__subtitle {
         margin-left: 35px;
-        @include breakpoint(xl) {
+        @include breakpoint(xxl) {
             text-align: center;
         }
     }
@@ -598,7 +598,7 @@ body {
         span {
             font-weight: 600;
         }
-        @include breakpoint(xl) {
+        @include breakpoint(xxl) {
             text-align: center;
         }
     }
@@ -662,6 +662,7 @@ body {
         color: #01070d;
         padding: 15px 22px;
         border-radius: 5px;
+        line-height: 160%;
         cursor: pointer;
 
         &:after {
@@ -817,6 +818,9 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        @include breakpoint(xl) {
+            flex-direction: column;
+        }
     }
 
     &__sale {
@@ -827,6 +831,9 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
         &:nth-child(2) {
             height: 615px;
             background: linear-gradient(180deg, #1d92ff 0%, #002648 0.01%, #002547 100%);
@@ -1056,25 +1063,60 @@ body {
 }
 .email {
     display: grid;
+    position: relative;
+    top: 15px;
     &__content {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 206px;
+        min-height: 206px;
         min-width: 1250px;
+        border-radius: 26px;
         background: url(/images/footer/background.png) no-repeat;
+        background-size: cover;
+        @include breakpoint(xxl) {
+            flex-direction: column;
+            min-width: 1100px;
+        }
+        @include breakpoint(xl) {
+            min-width: 950px;
+        }
+        @include breakpoint(lg) {
+            min-width: 750px;
+        }
+        @include breakpoint(md) {
+            min-width: 550px;
+        }
+        @include breakpoint(sm) {
+            min-width: 380px;
+        }
+        @include breakpoint(xs) {
+            min-width: 300px;
+        }
     }
 
     &__text-box {
         max-width: 480px;
         margin-left: 52px;
+        @include breakpoint(lg) {
+            margin: 0 auto;
+        }
+        @include breakpoint(sm) {
+            max-width: 300px;
+        }
     }
 
     &__title {
         font-weight: 600;
         font-size: 30px;
         margin-bottom: 25px;
+        line-height: 130%;
         color: #fff;
+        @include breakpoint(xxl) {
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
     }
 
     &__subtitle {
@@ -1082,30 +1124,46 @@ body {
         font-size: 16px;
         line-height: 160%;
         color: rgba(255, 255, 255, 0.7);
+        @include breakpoint(xxl) {
+            text-align: center;
+            margin-bottom: 30px;
+        }
     }
 
     &__box {
         margin-right: 52px;
         position: relative;
+        @include breakpoint(xxl) {
+            margin: 0px 0px 20px 45px;
+        }
+        @include breakpoint(sm) {
+            margin: 0px 0px 20px 0px;
+        }
     }
 
     &__input {
         background: none;
         opacity: 0.8;
-        backdrop-filter: blur(274px);
         border-radius: 34px;
+        font-size: 16px;
         color: rgba(255, 255, 255, 0.7);
         border: 1px solid #747474;
-        padding: 24px 140px 24px 40px;
+        padding: 18px 100px 18px 40px;
+        @include breakpoint(sm) {
+            padding: 18px 50px 18px 30px;
+        }
     }
 
     &__btn {
         position: absolute;
-        left: 255px;
-        top: 15px;
+        left: 260px;
+        top: 11px;
         min-width: 76px;
         height: 42px;
         border-radius: 34px;
+        @include breakpoint(sm) {
+            left: 198px;
+        }
     }
 }
 .footer {
