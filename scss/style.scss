@@ -62,7 +62,7 @@ body {
             height: 42px;
             left: -50px;
             top: -5px;
-            background: url(/images/header/logo.svg) no-repeat;
+            background: url(../images/header/logo.svg) no-repeat;
         }
     }
 
@@ -390,7 +390,7 @@ body {
             left: 0px;
             top: 20px;
             position: absolute;
-            background: url(/images/header/Arrow-1.png) no-repeat;
+            background: url(../images/header/Arrow-1.png) no-repeat;
         }
         @include breakpoint(xxl) {
             text-align: center;
@@ -541,7 +541,7 @@ body {
                 top: 20px;
                 width: 32px;
                 height: 32px;
-                background: url(/images/main/1.svg);
+                background: url(../images/main/1.svg);
             }
         }
         &:nth-child(2) {
@@ -552,7 +552,7 @@ body {
                 top: 20px;
                 width: 32px;
                 height: 32px;
-                background: url(/images/main/2.svg);
+                background: url(../images/main/2.svg);
             }
         }
         &:nth-child(3) {
@@ -563,7 +563,7 @@ body {
                 top: 10px;
                 width: 32px;
                 height: 32px;
-                background: url(/images/main/1.svg);
+                background: url(../images/main/1.svg);
             }
         }
     }
@@ -673,7 +673,7 @@ body {
             width: 15px;
             height: 8px;
             transition: 300ms;
-            background: url(/images/accordeon/Vector.svg) no-repeat;
+            background: url(../images/accordeon/Vector.svg) no-repeat;
         }
     }
 
@@ -722,7 +722,7 @@ body {
             width: 15px;
             height: 8px;
             transform: rotate(180deg);
-            background: url(/images/accordeon/Vector.svg) no-repeat;
+            background: url(../images/accordeon/Vector.svg) no-repeat;
         }
     }
 }
@@ -921,7 +921,7 @@ body {
             top: 0;
             width: 22px;
             height: 22px;
-            background: url(/images/icons/1.svg);
+            background: url(../images/icons/1.svg);
         }
     }
 
@@ -937,7 +937,7 @@ body {
             top: 0;
             width: 22px;
             height: 22px;
-            background: url(/images/icons/1.svg);
+            background: url(../images/icons/1.svg);
         }
     }
 
@@ -1072,7 +1072,7 @@ body {
         min-height: 206px;
         min-width: 1250px;
         border-radius: 26px;
-        background: url(/images/footer/background.png) no-repeat;
+        background: url(../images/footer/background.png) no-repeat;
         background-size: cover;
         @include breakpoint(xxl) {
             flex-direction: column;
@@ -1220,7 +1220,7 @@ body {
             height: 42px;
             left: -50px;
             top: -5px;
-            background: url(/images/header/logo.svg) no-repeat;
+            background: url(../images/header/logo.svg) no-repeat;
         }
     }
 

@@ -141,7 +141,7 @@ body {
   height: 42px;
   left: -50px;
   top: -5px;
-  background: url(/images/header/logo.svg) no-repeat;
+  background: url(../images/header/logo.svg) no-repeat;
 }
 .header__list {
   display: -webkit-box;
@@ -532,7 +532,7 @@ body {
   left: 0px;
   top: 20px;
   position: absolute;
-  background: url(/images/header/Arrow-1.png) no-repeat;
+  background: url(../images/header/Arrow-1.png) no-repeat;
 }
 @media (max-width: 1300px) {
   .main__text {
@@ -703,7 +703,7 @@ body {
   top: 20px;
   width: 32px;
   height: 32px;
-  background: url(/images/main/1.svg);
+  background: url(../images/main/1.svg);
 }
 .body__text:nth-child(2)::before {
   content: "";
@@ -712,7 +712,7 @@ body {
   top: 20px;
   width: 32px;
   height: 32px;
-  background: url(/images/main/2.svg);
+  background: url(../images/main/2.svg);
 }
 .body__text:nth-child(3)::before {
   content: "";
@@ -721,7 +721,7 @@ body {
   top: 10px;
   width: 32px;
   height: 32px;
-  background: url(/images/main/1.svg);
+  background: url(../images/main/1.svg);
 }
 
 .accordeon__content {
@@ -843,7 +843,7 @@ body {
   height: 8px;
   -webkit-transition: 300ms;
   transition: 300ms;
-  background: url(/images/accordeon/Vector.svg) no-repeat;
+  background: url(../images/accordeon/Vector.svg) no-repeat;
 }
 .accordeon .accordeon__item:nth-child(2n) .accordeon__button {
   background: #ffffff;
@@ -888,7 +888,7 @@ body {
   height: 8px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  background: url(/images/accordeon/Vector.svg) no-repeat;
+  background: url(../images/accordeon/Vector.svg) no-repeat;
 }
 
 .grid {
@@ -1106,7 +1106,7 @@ body {
   top: 0;
   width: 22px;
   height: 22px;
-  background: url(/images/icons/1.svg);
+  background: url(../images/icons/1.svg);
 }
 .keep__sale-item2 {
   margin-bottom: 20px;
@@ -1121,7 +1121,7 @@ body {
   top: 0;
   width: 22px;
   height: 22px;
-  background: url(/images/icons/1.svg);
+  background: url(../images/icons/1.svg);
 }
 .keep__sale-btn {
   padding: 12px 70px;
@@ -1255,7 +1255,7 @@ body {
   min-height: 206px;
   min-width: 1250px;
   border-radius: 26px;
-  background: url(/images/footer/background.png) no-repeat;
+  background: url(../images/footer/background.png) no-repeat;
   background-size: cover;
 }
 @media (max-width: 1300px) {
@@ -1436,7 +1436,7 @@ body {
   height: 42px;
   left: -50px;
   top: -5px;
-  background: url(/images/header/logo.svg) no-repeat;
+  background: url(../images/header/logo.svg) no-repeat;
 }
 @media (max-width: 992px) {
   .footer__list {
