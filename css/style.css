@@ -269,14 +269,14 @@ body {
     display: none;
   }
 }
-@media (max-width: 320px) {
-  .header .toggle-menu {
-    top: 22px;
-  }
-}
 @media (max-width: 768px) {
   .header .toggle-menu {
     top: 26px;
+  }
+}
+@media (max-width: 320px) {
+  .header .toggle-menu {
+    top: 22px;
   }
 }
 .header .line {

@@ -161,11 +161,11 @@ body {
         @include breakpoint(minlg) {
             display: none;
         }
-        @include breakpoint(xs) {
-            top: 22px;
-        }
         @include breakpoint(md) {
             top: 26px;
+        }
+        @include breakpoint(xs) {
+            top: 22px;
         }
     }
 
