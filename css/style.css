@@ -153,3 +153,479 @@ body {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
+
+.main {
+  position: relative;
+}
+.main::after {
+  content: "";
+  position: absolute;
+  width: 850px;
+  height: 480px;
+  right: 0px;
+  bottom: -15px;
+  background: url(/images/header/right.png) no-repeat;
+}
+.main__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 60px 0;
+}
+.main__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 35px;
+  margin-bottom: 12px;
+}
+.main__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+}
+.main__img1 {
+  margin-bottom: 10px;
+}
+.main__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  white-space: nowrap;
+}
+.main__title {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 63px;
+  max-width: 500px;
+  color: #2194ff;
+  margin-bottom: 14px;
+}
+.main__subtitle {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.main__subtitle::after {
+  content: "";
+  position: absolute;
+  width: 93px;
+  height: 89px;
+  right: 130px;
+  bottom: -30px;
+  background: url(/images/header/arrow.png) no-repeat;
+}
+.main__btn {
+  background: none;
+  max-width: 405px;
+  margin-bottom: 14px;
+}
+.main__subbutton {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+.main__right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+}
+
+.price {
+  background: rgba(33, 148, 255, 0.0549019608);
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.price::after {
+  content: "";
+  position: absolute;
+  width: 101px;
+  height: 70px;
+  bottom: -50px;
+  left: 50%;
+  background: url(/images/price/arrow.svg) no-repeat;
+}
+.price__title {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #2194ff;
+  margin-bottom: 50px;
+}
+.price__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.price__block-title {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+}
+.price__block-subtitle {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #2194ff;
+  margin-bottom: 22px;
+}
+.price__block-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+.price__btn {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  background: #2194ff;
+  border-radius: 50px;
+  color: #f1f1f1;
+  padding: 10px 35px;
+}
+.price__center {
+  margin-bottom: 210px;
+  position: relative;
+}
+.price__center::after {
+  content: "";
+  position: absolute;
+  width: 534px;
+  height: 240px;
+  left: -155px;
+  bottom: -250px;
+  background: url(/images/price/1.png) no-repeat;
+}
+.price__center-title {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(241, 241, 241, 0.7);
+  text-align: center;
+  margin-bottom: 12px;
+}
+.price__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+  margin-left: 30px;
+}
+.price__box-text {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: rgba(241, 241, 241, 0.7);
+}
+.price__box-text:nth-child(1) {
+  padding-right: 25px;
+  border-right: 2px solid rgba(241, 241, 241, 0.3);
+}
+
+.grid {
+  margin-top: 60px;
+}
+.grid__title {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #f1f1f1;
+  margin-bottom: 25px;
+}
+.grid__box {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  grid-auto-rows: 250px;
+  grid-column-gap: 100px;
+}
+.grid__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.grid__img {
+  margin-bottom: 8px;
+}
+.grid__subimg {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #2194ff;
+  max-width: 320px;
+  margin-bottom: 14px;
+}
+.grid__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+.grid__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.grid__btm-text {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  margin-bottom: 20px;
+}
+.grid__btm-text span {
+  color: #2194ff;
+}
+.grid__btm-subtext {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 19px;
+  background: #2194ff;
+  white-space: nowrap;
+  padding: 8px;
+}
+
+.volume {
+  padding: 45px 0;
+  background: rgba(33, 148, 255, 0.0549019608);
+}
+.volume__title {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #2194ff;
+  margin-bottom: 35px;
+}
+.volume__items {
+  margin-left: 110px;
+}
+.volume__item {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #f1f1f1;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+  padding: 25px 20px;
+  background: rgba(241, 241, 241, 0.2);
+  -webkit-transition: background 3s;
+  transition: background 3s;
+  border-radius: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.volume__item:active {
+  background: #2194ff;
+  -webkit-transition: background 0s;
+  transition: background 0s;
+}
+.volume__item:not(:last-child) {
+  margin-right: 15px;
+}
+.volume__body {
+  margin-top: 65px;
+}
+.volume__block {
+  display: none;
+}
+.volume__block:target {
+  display: block;
+  margin: 0 auto;
+}
+.volume__btn {
+  background: none;
+  margin-left: 350px;
+  margin-top: 25px;
+}
+
+.reviews {
+  margin: 40px 0;
+}
+.reviews__title {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.reviews__slider {
+  position: relative;
+}
+.reviews__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f1f1f1;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  padding: 40px;
+  width: 840px;
+}
+.reviews .swiper-slide {
+  width: 840px;
+}
+.reviews__img {
+  margin-right: 25px;
+}
+.reviews__name {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #2194ff;
+  margin-bottom: 5px;
+}
+.reviews__city {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2d2d2d;
+  margin-bottom: 15px;
+}
+.reviews__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2d2d2d;
+}
+.reviews .swiper-horizontal > .swiper-pagination-bullets,
+.reviews .swiper-pagination-bullets.swiper-pagination-horizontal,
+.reviews .swiper-pagination-custom,
+.reviews .swiper-pagination-fraction {
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+.reviews .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #3b3b3b;
+}
+.reviews .swiper-pagination-bullet-active {
+  background: #686868;
+}
+
+.questions__title {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #2194ff;
+  margin-bottom: 30px;
+}
+.questions .accordion {
+  overflow: hidden;
+  border-radius: 3px;
+}
+.questions .title {
+  width: 100%;
+  padding: 15px;
+  display: inline-block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: none;
+  -webkit-transition: all linear 0.15s;
+  transition: all linear 0.15s;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #f1f1f1;
+}
+.questions .title.active,
+.questions .title:hover {
+  background: #696969;
+  text-decoration: none;
+}
+.questions .content:last-child .title {
+  border-bottom: none;
+}
+.questions .section-content {
+  padding: 15px;
+  display: none;
+}
