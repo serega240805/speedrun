@@ -192,7 +192,7 @@ body {
         height: 70px;
         bottom: -50px;
         left: 50%;
-        background: url(/images/price/arrow.svg) no-repeat;
+        background: url(../images/price/arrow.svg) no-repeat;
     }
     &__title {
         font-family: "Russo One";
@@ -264,7 +264,7 @@ body {
             height: 240px;
             left: -155px;
             bottom: -250px;
-            background: url(/images/price/1.png) no-repeat;
+            background: url(../images/price/1.png) no-repeat;
         }
     }
 
@@ -533,6 +533,8 @@ body {
     }
 }
 .questions {
+    background: rgba(33, 148, 255, 0.0549019608);
+    padding-bottom: 30px;
     &__title {
         font-family: "Russo One";
         font-style: normal;
@@ -541,21 +543,10 @@ body {
         line-height: 43px;
         text-align: center;
         color: #2194ff;
-        margin-bottom: 30px;
+        padding: 40px 0px 30px 0px;
     }
 
     .accordion {
-        overflow: hidden;
-        border-radius: 3px;
-    }
-    .title {
-        width: 100%;
-        padding: 15px;
-        display: inline-block;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        background: none;
-        transition: all linear 0.15s;
         font-family: "Open Sans";
         font-style: normal;
         font-weight: 700;
@@ -563,17 +554,185 @@ body {
         line-height: 22px;
         text-transform: uppercase;
         color: #f1f1f1;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        background: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
-    .title.active,
-    .title:hover {
-        background: #696969;
-        text-decoration: none;
+
+    .active,
+    .accordion:active {
+        color: #2194ff;
     }
-    .content:last-child .title {
-        border-bottom: none;
-    }
-    .section-content {
-        padding: 15px;
+
+    .panel {
+        padding: 0 18px;
         display: none;
+        overflow: hidden;
+        p {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+            color: #f1f1f1;
+            margin-bottom: 10px;
+        }
+    }
+
+    .accordion:after {
+        content: "\1F817";
+        font-size: 25px;
+        float: left;
+        margin-right: 15px;
+    }
+
+    .active:after {
+        content: "\1F815";
+        font-size: 25px;
+        color: #2194ff;
+    }
+}
+.form {
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 55px 0px 10px 0px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 209px;
+            height: 84px;
+            left: 700px;
+            bottom: 70px;
+            background: url(../images/form/2.png) no-repeat;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-family: "Russo One";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 43px;
+        color: #f1f1f1;
+        margin-bottom: 50px;
+    }
+
+    &__input {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: rgba(45, 45, 45, 0.5);
+        background: #ffffff;
+        border: 1px solid #dedede;
+        box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 20px 50px 20px 20px;
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__textarea {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: rgba(45, 45, 45, 0.5);
+        background: #ffffff;
+        border: 1px solid #dedede;
+        box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 10px 0px 0px 10px;
+    }
+
+    &__img {
+    }
+
+    &__btn {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: left;
+        color: #f1f1f1;
+        background: #2194ff;
+        border-radius: 50px;
+        padding: 10px 40px;
+        margin-bottom: 60px;
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+
+    &__flex-img {
+        border-radius: 20px;
+    }
+}
+.footer {
+    &__text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-family: "Russo One";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 43px;
+        text-align: center;
+        color: #2194ff;
+        margin-bottom: 12px;
+    }
+
+    &__btn {
+        background: none;
+        margin-bottom: 40px;
+    }
+
+    &__map {
+        margin-bottom: 40px;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__link {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        text-decoration-line: underline;
+        color: #f1f1f1;
+        margin-bottom: 70px;
     }
 }
