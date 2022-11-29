@@ -397,6 +397,16 @@ body {
 }
 .grid__img {
   margin-bottom: 8px;
+  display: inline-block;
+  text-align: center;
+}
+.grid__img::before {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
 }
 .grid__subimg {
   font-family: "Russo One";

@@ -326,6 +326,16 @@ body {
 
     &__img {
         margin-bottom: 8px;
+        display: inline-block;
+        text-align: center;
+        &::before {
+            display: block;
+            content: attr(title);
+            font-weight: bold;
+            height: 0;
+            overflow: hidden;
+            visibility: hidden;
+        }
     }
 
     &__subimg {
