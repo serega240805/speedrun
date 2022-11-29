@@ -165,7 +165,7 @@ body {
   height: 480px;
   right: 0px;
   bottom: -15px;
-  background: url(/images/header/right.png) no-repeat;
+  background: url(../images/header/right.png) no-repeat;
 }
 .main__content {
   display: -webkit-box;
@@ -229,7 +229,7 @@ body {
   height: 89px;
   right: 130px;
   bottom: -30px;
-  background: url(/images/header/arrow.png) no-repeat;
+  background: url(../images/header/arrow.png) no-repeat;
 }
 .main__btn {
   background: none;
