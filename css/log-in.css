@@ -121,7 +121,7 @@ body {
   left: -60px;
   bottom: 12px;
   position: absolute;
-  background: url(/images/header/logo.svg);
+  background: url(../images/header/logo.svg);
 }
 .header__nav {
   margin-right: 50px;
@@ -208,7 +208,7 @@ body {
   bottom: 15px;
   right: 640px;
   z-index: 2;
-  background: url(/images/ico/User.svg);
+  background: url(../images/ico/User.svg);
 }
 .log-in__body::before {
   content: "";
@@ -218,7 +218,7 @@ body {
   bottom: 15px;
   right: 8px;
   z-index: 2;
-  background: url(/images/ico/Eye.svg);
+  background: url(../images/ico/Eye.svg);
 }
 .log-in__input {
   background: #000000;
@@ -241,7 +241,7 @@ body {
   bottom: 135px;
   right: 10px;
   z-index: 2;
-  background: url(/images/ico/User.svg);
+  background: url(../images/ico/User.svg);
 }
 .log-in__input:nth-child(2)::before {
   content: "";
@@ -251,7 +251,7 @@ body {
   bottom: 15px;
   right: 8px;
   z-index: 2;
-  background: url(/images/ico/Eye.svg);
+  background: url(../images/ico/Eye.svg);
 }
 .log-in__btn {
   color: #ffffff;
@@ -308,7 +308,7 @@ body {
   bottom: 22px;
   left: 85px;
   z-index: 2;
-  background: url(/images/ico/Facebook.svg);
+  background: url(../images/ico/Facebook.svg);
 }
 .log-in__bottom-btn:nth-child(2)::after {
   content: "";
@@ -318,7 +318,7 @@ body {
   bottom: 22px;
   left: 85px;
   z-index: 2;
-  background: url(/images/ico/G_logo.svg);
+  background: url(../images/ico/G_logo.svg);
 }
 .log-in__bottom-btn:nth-child(3)::after {
   content: "";
@@ -328,7 +328,7 @@ body {
   bottom: 22px;
   left: 85px;
   z-index: 2;
-  background: url(/images/ico/Apple_logo.svg);
+  background: url(../images/ico/Apple_logo.svg);
 }
 .log-in__bottom-subbox {
   font-size: 16px;

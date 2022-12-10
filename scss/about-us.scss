@@ -47,7 +47,7 @@ body {
             left: -60px;
             bottom: 12px;
             position: absolute;
-            background: url(/images/header/logo.svg);
+            background: url(../images/header/logo.svg);
         }
     }
 
@@ -96,6 +96,139 @@ body {
         color: #ffffff;
         background: #306ef7;
         border-radius: 10px;
+    }
+}
+.mission {
+    margin-bottom: 190px;
+    border-bottom: 1.5px solid #828282;
+    &__logo {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 62px;
+        line-height: 93px;
+        position: relative;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-left: 90px;
+        &::after {
+            content: "";
+            width: 77px;
+            height: 74px;
+            left: 570px;
+            bottom: 15px;
+            position: absolute;
+            background: url(../images/team/logo.png);
+        }
+    }
+
+    &__blue {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 38px;
+        text-align: center;
+        color: #306ef7;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 75px;
+        line-height: 112px;
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 45px;
+        text-align: center;
+        margin-bottom: 190px;
+    }
+
+    &__body {
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 42px;
+        margin-bottom: 45px;
+    }
+
+    &__footer {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 42px;
+        margin-bottom: 55px;
+    }
+}
+.team {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 190px;
+    &__subtitle {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 38px;
+        color: #306ef7;
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 75px;
+        line-height: 112px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        gap: 215px;
+    }
+
+    &__bloc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img {
+        margin-bottom: 18px;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 52px;
+        text-align: center;
+    }
+
+    &__profesion {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 28px;
+        margin-bottom: 22px;
+        text-align: center;
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #ffffff;
+        position: relative;
+        text-align: center;
+        &::before {
+            content: "";
+            position: absolute;
+            background: url(../images/ico/Arrow.svg);
+            width: 15px;
+            height: 17px;
+            right: -20px;
+            bottom: 7px;
+        }
     }
 }
 .started {
@@ -154,7 +287,7 @@ body {
             height: 29px;
             left: -40px;
             bottom: 5px;
-            background: url(/images/header/dot.svg);
+            background: url(../images/header/dot.svg);
         }
     }
 }
@@ -184,7 +317,7 @@ body {
             left: -66px;
             bottom: 12px;
             position: absolute;
-            background: url(/images/header/logo.svg);
+            background: url(../images/header/logo.svg);
         }
     }
 

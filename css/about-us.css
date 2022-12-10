@@ -121,7 +121,7 @@ body {
   left: -60px;
   bottom: 12px;
   position: absolute;
-  background: url(/images/header/logo.svg);
+  background: url(../images/header/logo.svg);
 }
 .header__nav {
   margin-right: 50px;
@@ -161,6 +161,142 @@ body {
   color: #ffffff;
   background: #306ef7;
   border-radius: 10px;
+}
+
+.mission {
+  margin-bottom: 190px;
+  border-bottom: 1.5px solid #828282;
+}
+.mission__logo {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 93px;
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: 90px;
+}
+.mission__logo::after {
+  content: "";
+  width: 77px;
+  height: 74px;
+  left: 570px;
+  bottom: 15px;
+  position: absolute;
+  background: url(../images/team/logo.png);
+}
+.mission__blue {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 38px;
+  text-align: center;
+  color: #306ef7;
+}
+.mission__title {
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 112px;
+  text-align: center;
+}
+.mission__subtitle {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  margin-bottom: 190px;
+}
+.mission__text {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 42px;
+  margin-bottom: 45px;
+}
+.mission__footer {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  margin-bottom: 55px;
+}
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 190px;
+}
+.team__subtitle {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 38px;
+  color: #306ef7;
+  text-align: center;
+}
+.team__title {
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 112px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.team__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 215px;
+}
+.team__bloc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.team__img {
+  margin-bottom: 18px;
+}
+.team__name {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 52px;
+  text-align: center;
+}
+.team__profesion {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 28px;
+  margin-bottom: 22px;
+  text-align: center;
+}
+.team__link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+}
+.team__link::before {
+  content: "";
+  position: absolute;
+  background: url(../images/ico/Arrow.svg);
+  width: 15px;
+  height: 17px;
+  right: -20px;
+  bottom: 7px;
 }
 
 .started {
@@ -223,7 +359,7 @@ body {
   height: 29px;
   left: -40px;
   bottom: 5px;
-  background: url(/images/header/dot.svg);
+  background: url(../images/header/dot.svg);
 }
 
 .footer__content {
@@ -261,7 +397,7 @@ body {
   left: -66px;
   bottom: 12px;
   position: absolute;
-  background: url(/images/header/logo.svg);
+  background: url(../images/header/logo.svg);
 }
 .footer__sublogo {
   font-weight: 400;

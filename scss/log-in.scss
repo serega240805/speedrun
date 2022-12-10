@@ -47,7 +47,7 @@ body {
             left: -60px;
             bottom: 12px;
             position: absolute;
-            background: url(/images/header/logo.svg);
+            background: url(../images/header/logo.svg);
         }
     }
 
@@ -134,7 +134,7 @@ body {
             bottom: 15px;
             right: 640px;
             z-index: 2;
-            background: url(/images/ico/User.svg);
+            background: url(../images/ico/User.svg);
         }
         &::before {
             content: "";
@@ -144,7 +144,7 @@ body {
             bottom: 15px;
             right: 8px;
             z-index: 2;
-            background: url(/images/ico/Eye.svg);
+            background: url(../images/ico/Eye.svg);
         }
     }
 
@@ -169,7 +169,7 @@ body {
                 bottom: 135px;
                 right: 10px;
                 z-index: 2;
-                background: url(/images/ico/User.svg);
+                background: url(../images/ico/User.svg);
             }
         }
         &:nth-child(2) {
@@ -181,7 +181,7 @@ body {
                 bottom: 15px;
                 right: 8px;
                 z-index: 2;
-                background: url(/images/ico/Eye.svg);
+                background: url(../images/ico/Eye.svg);
             }
         }
     }
@@ -246,7 +246,7 @@ body {
                 bottom: 22px;
                 left: 85px;
                 z-index: 2;
-                background: url(/images/ico/Facebook.svg);
+                background: url(../images/ico/Facebook.svg);
             }
         }
         &:nth-child(2) {
@@ -258,7 +258,7 @@ body {
                 bottom: 22px;
                 left: 85px;
                 z-index: 2;
-                background: url(/images/ico/G_logo.svg);
+                background: url(../images/ico/G_logo.svg);
             }
         }
         &:nth-child(3) {
@@ -270,7 +270,7 @@ body {
                 bottom: 22px;
                 left: 85px;
                 z-index: 2;
-                background: url(/images/ico/Apple_logo.svg);
+                background: url(../images/ico/Apple_logo.svg);
             }
         }
     }

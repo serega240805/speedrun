@@ -47,7 +47,7 @@ body {
             left: -60px;
             bottom: 12px;
             position: absolute;
-            background: url(/images/header/logo.svg);
+            background: url(../images/header/logo.svg);
         }
     }
 
@@ -133,7 +133,7 @@ body {
             &::after {
                 content: "";
                 position: absolute;
-                background: url(/images/ico/Coming_soon_btn.png);
+                background: url(../images/ico/Coming_soon_btn.png);
                 width: 146px;
                 height: 39px;
                 right: 10px;
@@ -144,7 +144,7 @@ body {
             &::after {
                 content: "";
                 position: absolute;
-                background: url(/images/ico/Coming_soon_btn.png);
+                background: url(../images/ico/Coming_soon_btn.png);
                 width: 146px;
                 height: 39px;
                 right: 10px;
@@ -155,7 +155,7 @@ body {
             &::after {
                 content: "";
                 position: absolute;
-                background: url(/images/ico/Coming_soon_btn.png);
+                background: url(../images/ico/Coming_soon_btn.png);
                 width: 146px;
                 height: 39px;
                 right: 10px;
@@ -166,7 +166,7 @@ body {
             &::after {
                 content: "";
                 position: absolute;
-                background: url(/images/ico/Coming_soon_btn.png);
+                background: url(../images/ico/Coming_soon_btn.png);
                 width: 146px;
                 height: 39px;
                 right: 10px;
@@ -197,7 +197,7 @@ body {
 .audience {
     padding: 300px 0;
     margin-bottom: 190px;
-    background: url(/images/audience/1.png) no-repeat;
+    background: url(../images/audience/1.png) no-repeat;
     &__title {
         font-weight: 600;
         font-size: 70px;
@@ -261,7 +261,7 @@ body {
             height: 29px;
             left: -40px;
             bottom: 5px;
-            background: url(/images/header/dot.svg);
+            background: url(../images/header/dot.svg);
         }
     }
 }
@@ -291,7 +291,7 @@ body {
             left: -66px;
             bottom: 12px;
             position: absolute;
-            background: url(/images/header/logo.svg);
+            background: url(../images/header/logo.svg);
         }
     }
 

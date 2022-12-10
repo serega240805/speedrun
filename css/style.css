@@ -120,7 +120,7 @@ body {
   left: -60px;
   bottom: 12px;
   position: absolute;
-  background: url(/images/header/logo.svg);
+  background: url(../images/header/logo.svg);
 }
 .header__nav {
   margin-right: 50px;
@@ -237,7 +237,7 @@ body {
   height: 29px;
   left: -40px;
   bottom: 5px;
-  background: url(/images/header/dot.svg);
+  background: url(../images/header/dot.svg);
 }
 .main__bottom {
   margin-bottom: 160px;
@@ -275,7 +275,7 @@ body {
   height: 38px;
   left: 19px;
   bottom: 8px;
-  background: url(/images/ico/Smile_emoji.png);
+  background: url(../images/ico/Smile_emoji.png);
 }
 .main #smile-2::before {
   content: "";
@@ -284,7 +284,7 @@ body {
   height: 32px;
   left: 25px;
   bottom: 10px;
-  background: url(/images/ico/Happy_emoji.png);
+  background: url(../images/ico/Happy_emoji.png);
 }
 .main #smile-3::before {
   content: "";
@@ -293,7 +293,7 @@ body {
   height: 43px;
   left: 35px;
   bottom: 10px;
-  background: url(/images/ico/Party_emoji.png);
+  background: url(../images/ico/Party_emoji.png);
 }
 .main__bottom-subtext {
   font-weight: 400;
@@ -390,7 +390,7 @@ body {
   height: 33px;
   left: -40px;
   bottom: 5px;
-  background: url(/images/ico/1.svg);
+  background: url(../images/ico/1.svg);
 }
 .step-1__left-2 {
   font-weight: 400;
@@ -407,7 +407,7 @@ body {
   height: 33px;
   left: -40px;
   bottom: 5px;
-  background: url(/images/ico/2.svg);
+  background: url(../images/ico/2.svg);
 }
 .step-1__left-btn-1 {
   font-weight: 500;
@@ -481,7 +481,7 @@ body {
   height: 336px;
   right: 0;
   bottom: 0;
-  background: url(/images/step-2/Mobile.png);
+  background: url(../images/step-2/Mobile.png);
 }
 .step-2__green {
   font-weight: 400;
@@ -569,7 +569,7 @@ body {
 .audience {
   padding: 300px 0;
   margin-bottom: 190px;
-  background: url(/images/audience/1.png) no-repeat;
+  background: url(../images/audience/1.png) no-repeat;
 }
 .audience__title {
   font-weight: 600;
@@ -638,7 +638,7 @@ body {
   height: 29px;
   left: -40px;
   bottom: 5px;
-  background: url(/images/header/dot.svg);
+  background: url(../images/header/dot.svg);
 }
 
 .footer__content {
@@ -676,7 +676,7 @@ body {
   left: -66px;
   bottom: 12px;
   position: absolute;
-  background: url(/images/header/logo.svg);
+  background: url(../images/header/logo.svg);
 }
 .footer__sublogo {
   font-weight: 400;

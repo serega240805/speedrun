@@ -120,7 +120,7 @@ body {
   left: -60px;
   bottom: 12px;
   position: absolute;
-  background: url(/images/header/logo.svg);
+  background: url(../images/header/logo.svg);
 }
 .header__nav {
   margin-right: 50px;
@@ -215,7 +215,7 @@ body {
   bottom: 170px;
   right: 25px;
   z-index: 2;
-  background: url(/images/ico/At_sign.svg);
+  background: url(../images/ico/At_sign.svg);
 }
 .sign-up__input {
   background: #000000;
@@ -252,7 +252,7 @@ body {
   bottom: 135px;
   right: 10px;
   z-index: 2;
-  background: url(/images/ico/User.svg);
+  background: url(../images/ico/User.svg);
 }
 .sign-up__left::before {
   content: "";
@@ -262,7 +262,7 @@ body {
   bottom: 15px;
   right: 8px;
   z-index: 2;
-  background: url(/images/ico/Eye.svg);
+  background: url(../images/ico/Eye.svg);
 }
 .sign-up__btn {
   color: #ffffff;
@@ -318,7 +318,7 @@ body {
   bottom: 22px;
   left: 85px;
   z-index: 2;
-  background: url(/images/ico/Facebook.svg);
+  background: url(../images/ico/Facebook.svg);
 }
 .sign-up__bottom-btn:nth-child(2)::after {
   content: "";
@@ -328,7 +328,7 @@ body {
   bottom: 22px;
   left: 85px;
   z-index: 2;
-  background: url(/images/ico/G_logo.svg);
+  background: url(../images/ico/G_logo.svg);
 }
 .sign-up__bottom-btn:nth-child(3)::after {
   content: "";
@@ -338,7 +338,7 @@ body {
   bottom: 22px;
   left: 85px;
   z-index: 2;
-  background: url(/images/ico/Apple_logo.svg);
+  background: url(../images/ico/Apple_logo.svg);
 }
 .sign-up__bottom-subbox {
   font-size: 16px;
